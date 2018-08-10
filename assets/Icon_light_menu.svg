@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="50px" viewBox="0 0 60 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sidebar-15" transform="translate(-874.000000, -67.000000)" fill="#000000">
+            <g id="navigation" transform="translate(58.000000, 57.000000)">
+                <path d="M816,57 C816,55.3431458 817.33731,54 818.995937,54 L873.004063,54 C874.658673,54 876,55.3465171 876,57 C876,58.6568542 874.66269,60 873.004063,60 L818.995937,60 C817.341327,60 816,58.6534829 816,57 Z M816,35 C816,33.3431458 817.33731,32 818.995937,32 L873.004063,32 C874.658673,32 876,33.3465171 876,35 C876,36.6568542 874.66269,38 873.004063,38 L818.995937,38 C817.341327,38 816,36.6534829 816,35 Z M816,13 C816,11.3431458 817.33731,10 818.995937,10 L873.004063,10 C874.658673,10 876,11.3465171 876,13 C876,14.6568542 874.66269,16 873.004063,16 L818.995937,16 C817.341327,16 816,14.6534829 816,13 Z" id="menu"></path>
+            </g>
+        </g>
+    </g>
+</svg>
