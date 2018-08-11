@@ -15,12 +15,19 @@ Variables
 //Color variables
 
 @background-grey: #f3f3f3;
+@background-white: #fff;
 @text-black: #000;
+@text-main: #798f90;
 @accent: #0c0cea;
 
 
 //Font size variables
+@base-font: 'Raleway', sans-serif;
+
 //Typography variables
+@h1-size: 6.429em;
+@h3-size: 2.857em;
+@h4-size: 1.888em;
 
 /*
 ==============================================
@@ -28,8 +35,87 @@ Mixins
 ==============================================
 */
 
+.flex() {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.justify-content(@justify-content) {
+  -webkit-justify-content: @justify-content;
+  justify-content: @justify-content;
+}
+
+.basic-font {
+  font-family: @base-font;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.055em;
+}
+
+.heavy-font {
+ font-weight: 800;
+}
+
+.black-font {
+  font-weight: 900;
+}
+
+.triangle-down(@color) {
+  float: left;
+  -webkit-clip-path: polygon(0 0, 86% 100%, 100% 0);
+  clip-path: polygon(0 0, 86% 100%, 100% 0);
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.triangle-up(@color) {
+
+}
+
 /*
 ==============================================
 Overall styles
 ==============================================
 */
+
+
+[class*="narrow"] {
+  max-width: 1288px;
+  margin: auto;
+}
+
+[class*="hr"]  {
+  width: 80px;
+}
+
+[class*="accent"] {
+  color: @accent;
+}
+
+[class*="white"] {
+  background-color: @background-white;
+}
+
+[class*="grey"] {
+  background-color: @background-grey;
+}
+
+[class*="align-right"] {
+ text-align: right;
+}
+
+.triangle__wrapper {
+  position: relative;
+  height: 500px;
+  background-color: @background-white;
+}
+
+[class*="triangle_down"]  {
+  .triangle-down(@background-grey);
+}
+
+

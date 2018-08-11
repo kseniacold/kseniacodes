@@ -13,8 +13,53 @@ Variables
 Mixins
 ==============================================
 */
+.basic-font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.055em;
+}
+.heavy-font {
+  font-weight: 800;
+}
+.black-font {
+  font-weight: 900;
+}
 /*
 ==============================================
 Overall styles
 ==============================================
 */
+[class*="narrow"] {
+  max-width: 1288px;
+  margin: auto;
+}
+[class*="hr"] {
+  width: 80px;
+}
+[class*="accent"] {
+  color: #0c0cea;
+}
+[class*="white"] {
+  background-color: #fff;
+}
+[class*="grey"] {
+  background-color: #f3f3f3;
+}
+[class*="align-right"] {
+  text-align: right;
+}
+.triangle__wrapper {
+  position: relative;
+  height: 500px;
+  background-color: #fff;
+}
+[class*="triangle_down"] {
+  float: left;
+  -webkit-clip-path: polygon(0 0, 86% 100%, 100% 0);
+  clip-path: polygon(0 0, 86% 100%, 100% 0);
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
