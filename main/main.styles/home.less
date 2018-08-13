@@ -11,38 +11,92 @@
   margin-top: 10px;
 }
 
+/*_________ Top section ___________*/
 .master-head {
   max-width: 400px;
   margin-top: 4.444em;
 }
-
-.subhead {
-  margin-top: 2.714em;
-  margin-left: 3em;
-  display: inline-block;
+.sub__heading, .section__heading {
   position: relative;
+  display: inline-block;
 }
 
-.subhead__arrow_right {
-  max-height: 10px;
-  position: absolute;
-  right: 0;
+.sub__heading {
+  margin-top: 2.5em;
+  margin-left: 3.429em;
+}
+
+/*_________ Homepage Icons & elements ___________*/
+
+[class*="format__arrow"]  {
+  max-height: 9px;
 }
 
 .scroll-down {
   text-align: center;
-  margin-top: 4.286em;
+  margin-top: 4.143em;
+  margin-bottom: 2em;
 }
 
 .scroll-down__icon {
   max-width: 60px;
 }
 
+/*_________ Heading with format ___________*/
+
+.heading__format {
+  height: 10px;
+}
+
+.heading__format_bottom {
+  margin-top: 10px;
+}
+
+.heading__format_top {
+  margin-bottom: 10px;
+}
+
+
+.format__hr_bottom {
+  margin-bottom: 6px;
+}
+
+.format__hr_top {
+  margin-top: 6px;
+}
+
+section {
+  padding-bottom: 2em;
+}
+
+.section_white {
+  padding-bottom: 11.286em;
+}
+
+section:not(.section_first) {
+  padding-top: 14.857em;
+}
+
 .section__contents {
   .flex();
-  .justify-content(center);
+  .justify-content(space-between);
+  margin: 7.286em auto 2.143em auto;
+  max-width: 78%;
 }
 
 .section__col-3 {
-  width: 100% / 3;
+  width: 31.2%;
+}
+
+.section__text {
+  margin-bottom: 2.286em;
+}
+
+.section__btn {
+  color: @accent;
+  font-weight: 700;
+  letter-spacing: 0.265em;
+  padding: 1.143em 3.214em;
+  border-radius: 6px;
+  border: 1px solid #0c0cea;
 }

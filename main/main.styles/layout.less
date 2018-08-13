@@ -34,13 +34,13 @@ ul {
 }
 
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   .heavy-font;
   margin: 0;
   padding: 0;
 }
 
-p {
+p, hr {
   padding: 0;
   margin: 0;
 }
@@ -82,6 +82,12 @@ h1 {
   line-height: 0.8em;
 }
 
+h2 {
+  font-size: @h2-size;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
 h3 {
   font-size: @h3-size;
   letter-spacing: 0.075em;
@@ -91,4 +97,13 @@ h4 {
   font-size: @h4-size;
   letter-spacing: 0;
   line-height: 1.45em;
+}
+
+h6 {
+  font-size: @h6-size;
+}
+
+p {
+  color: @text-main;
+  line-height: 2;
 }

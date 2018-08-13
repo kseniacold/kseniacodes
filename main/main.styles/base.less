@@ -26,8 +26,10 @@ Variables
 
 //Typography variables
 @h1-size: 6.429em;
+@h2-size: 3.571em;
 @h3-size: 2.857em;
 @h4-size: 1.888em;
+@h6-size: 1em;
 
 /*
 ==============================================
@@ -62,18 +64,22 @@ Mixins
   font-weight: 900;
 }
 
-.triangle-down(@color) {
+.triangle() {
   float: left;
-  -webkit-clip-path: polygon(0 0, 86% 100%, 100% 0);
-  clip-path: polygon(0 0, 86% 100%, 100% 0);
-  height: 500px;
+  height: 220px;
   width: 100%;
   position: absolute;
   top: 0;
 }
 
-.triangle-up(@color) {
+.triangle-down() {
+  -webkit-clip-path: polygon(0px 0px, 63.71% 100%, 100% 0px);
+  clip-path: polygon(0px 0px, 63.71% 100%, 100% 0px);
 
+}
+
+.triangle-up() {
+  clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
 }
 
 /*
@@ -82,6 +88,11 @@ Overall styles
 ==============================================
 */
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 [class*="narrow"] {
   max-width: 1288px;
@@ -90,6 +101,7 @@ Overall styles
 
 [class*="hr"]  {
   width: 80px;
+  margin: auto 0;
 }
 
 [class*="accent"] {
@@ -108,14 +120,38 @@ Overall styles
  text-align: right;
 }
 
+[class*="align-left"] {
+  text-align: left;
+}
+
+[class*="align-center"] {
+  text-align: center;
+}
+
+[class*="abs-right"] {
+  position: absolute;
+  right: 0;
+}
+
+[class*="abs-left"] {
+  position: absolute;
+  left: 0;
+}
+
 .triangle__wrapper {
   position: relative;
-  height: 500px;
+  height: 200px;
   background-color: @background-white;
 }
 
 [class*="triangle_down"]  {
-  .triangle-down(@background-grey);
+  .triangle();
+  .triangle-down();
+}
+
+[class*="triangle_up"]  {
+  .triangle();
+  .triangle-up();
 }
 
 

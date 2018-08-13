@@ -30,12 +30,18 @@ Mixins
 Overall styles
 ==============================================
 */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 [class*="narrow"] {
   max-width: 1288px;
   margin: auto;
 }
 [class*="hr"] {
   width: 80px;
+  margin: auto 0;
 }
 [class*="accent"] {
   color: #0c0cea;
@@ -49,17 +55,39 @@ Overall styles
 [class*="align-right"] {
   text-align: right;
 }
+[class*="align-left"] {
+  text-align: left;
+}
+[class*="align-center"] {
+  text-align: center;
+}
+[class*="abs-right"] {
+  position: absolute;
+  right: 0;
+}
+[class*="abs-left"] {
+  position: absolute;
+  left: 0;
+}
 .triangle__wrapper {
   position: relative;
-  height: 500px;
+  height: 200px;
   background-color: #fff;
 }
 [class*="triangle_down"] {
   float: left;
-  -webkit-clip-path: polygon(0 0, 86% 100%, 100% 0);
-  clip-path: polygon(0 0, 86% 100%, 100% 0);
-  height: 500px;
+  height: 220px;
   width: 100%;
   position: absolute;
   top: 0;
+  -webkit-clip-path: polygon(0px 0px, 63.71% 100%, 100% 0px);
+  clip-path: polygon(0px 0px, 63.71% 100%, 100% 0px);
+}
+[class*="triangle_up"] {
+  float: left;
+  height: 220px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
 }
