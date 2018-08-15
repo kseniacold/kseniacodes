@@ -49,6 +49,11 @@ Mixins
   justify-content: @justify-content;
 }
 
+.align-items(@align-items) {
+  -webkit-align-items: @align-items;
+  align-items: @align-items;
+}
+
 .basic-font {
   font-family: @base-font;
   font-weight: 400;
@@ -80,6 +85,12 @@ Mixins
 
 .triangle-up() {
   clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
+}
+
+.hover-box-shadow() {
+  -webkit-box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
+  -moz-box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
+  box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
 }
 
 /*

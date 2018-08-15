@@ -113,14 +113,15 @@ Overall styles
   max-width: 400px;
   margin-top: 4.444em;
 }
-.sub__heading,
+[class*="sub__heading"],
 .section__heading {
   position: relative;
   display: inline-block;
 }
-.sub__heading {
+[class*="sub__heading"] {
   margin-top: 2.5em;
   margin-left: 3.429em;
+  max-width: 400px;
 }
 /*_________ Homepage Icons & elements ___________*/
 [class*="format__arrow"] {
@@ -138,13 +139,13 @@ Overall styles
 .heading__format {
   height: 10px;
 }
-.heading__format_bottom {
+[class*="heading__format_bottom"] {
   margin-top: 10px;
 }
-.heading__format_top {
+[class*="heading__format_top"] {
   margin-bottom: 10px;
 }
-.format__hr_bottom {
+[class*="format__hr_bottom"] {
   margin-bottom: 6px;
 }
 .format__hr_top {
@@ -160,6 +161,8 @@ section:not(.section_first) {
   padding-top: 14.857em;
 }
 .section__contents {
+  margin: 7.286em auto 2.143em auto;
+  max-width: 78%;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
@@ -170,8 +173,6 @@ section:not(.section_first) {
   /* NEW, Spec - Firefox, Chrome, Opera */
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  margin: 7.286em auto 2.143em auto;
-  max-width: 78%;
 }
 .section__col-3 {
   width: 31.2%;
@@ -186,4 +187,52 @@ section:not(.section_first) {
   padding: 1.143em 3.214em;
   border-radius: 6px;
   border: 1px solid #0c0cea;
+}
+/*_________ Stacked Image Gallery ___________*/
+.section__gallery_stacked {
+  width: 100%;
+}
+[class*="gallery__item"] {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  -webkit-align-items: center;
+  align-items: center;
+}
+[class*="gallery__item"]:hover .thumbnail-vr {
+  -webkit-box-shadow: 18px -18px 0px 0px #0c0cea;
+  -moz-box-shadow: 18px -18px 0px 0px #0c0cea;
+  box-shadow: 18px -18px 0px 0px #0c0cea;
+}
+[class*="gallery__item"]:first-child {
+  margin-top: 1.286em;
+}
+.gallery__item_right {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.gallery__item_right .heading__wrapper {
+  position: relative;
+  left: 2.286em;
+}
+.gallery__item_left {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.gallery__item_left .heading__wrapper {
+  position: relative;
+  right: 50px;
+}
+[class="thumbnail-vr"] {
+  max-width: 440px;
+  overflow: hidden;
+}
+.thumbnail__img {
+  width: 100%;
+  height: auto;
 }
