@@ -1,0 +1,8 @@
+.page {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.page__bumper {
+  height: 48px;
+}

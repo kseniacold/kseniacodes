@@ -35,10 +35,6 @@ Overall styles
   clear: both;
   display: table;
 }
-[class*="narrow"] {
-  max-width: 1288px;
-  margin: auto;
-}
 [class*="hr"] {
   width: 80px;
   margin: auto 0;
@@ -91,23 +87,6 @@ Overall styles
   top: 0;
   clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
 }
-.header__wrapper_narrow {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  /* NEW, Spec - Firefox, Chrome, Opera */
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  padding: 2.857em 0;
-}
-.navigation__icon {
-  max-width: 2em;
-  margin-top: 10px;
-}
 /*_________ Top section ___________*/
 .master-head {
   max-width: 400px;
@@ -119,9 +98,11 @@ Overall styles
   display: inline-block;
 }
 [class*="sub__heading"] {
+  max-width: 400px;
+}
+.section_first .sub__heading {
   margin-top: 2.5em;
   margin-left: 3.429em;
-  max-width: 400px;
 }
 /*_________ Homepage Icons & elements ___________*/
 [class*="format__arrow"] {
@@ -185,6 +166,7 @@ section:not(.section_first) {
   font-weight: 700;
   letter-spacing: 0.265em;
   padding: 1.143em 3.214em;
+  width: 300px;
   border-radius: 6px;
   border: 1px solid #0c0cea;
 }
@@ -192,7 +174,7 @@ section:not(.section_first) {
 .section__gallery_stacked {
   width: 100%;
 }
-[class*="gallery__item"] {
+.gallery__item {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
@@ -204,29 +186,33 @@ section:not(.section_first) {
   -webkit-align-items: center;
   align-items: center;
 }
-[class*="gallery__item"]:hover .thumbnail-vr {
+.gallery__item:hover .thumbnail-vr {
   -webkit-box-shadow: 18px -18px 0px 0px #0c0cea;
   -moz-box-shadow: 18px -18px 0px 0px #0c0cea;
   box-shadow: 18px -18px 0px 0px #0c0cea;
 }
-[class*="gallery__item"]:first-child {
+.gallery__item:first-child {
   margin-top: 1.286em;
+}
+.gallery__item .heading__text {
+  margin-top: 0.143em;
+}
+.gallery__item:not(:first-child) {
+  margin-top: 8em;
 }
 .gallery__item_right {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 .gallery__item_right .heading__wrapper {
-  position: relative;
-  left: 2.286em;
+  margin-right: 4em;
 }
 .gallery__item_left {
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 .gallery__item_left .heading__wrapper {
-  position: relative;
-  right: 50px;
+  margin-left: 4em;
 }
 [class="thumbnail-vr"] {
   max-width: 440px;

@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="document">
 <head>
     <meta charset="UTF-8">
     <title>Ksenia Koldaeva, software engineer</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="main.styles/main.css">
+    <link rel="stylesheet" href="styles/build.css">
 </head>
-<body>
-<header class="header">
-    <div class="header__wrapper_narrow">
-        <div class="header__logo">
-            <h3 class="logo__text_accent">kc</h3>
+<body class="site">
+    <div class="page">
+
+    <header class="header">
+        <div class="header__content content content_narrow">
+            <div class="logo">
+                <h3 class="logo__text logo__text_accent">kc</h3>
+            </div>
+            <div class="navigation">
+                <img src="../assets/icon_light_menu.svg" class="navigation__icon" alt="hamburger icon"/>
+            </div>
         </div>
-        <div class="header__navigation">
-            <img src="../assets/icon_light_menu.svg" class="navigation__icon" alt="hamburger icon"/>
-        </div>
-    </div>
-</header>
-<div class="wrapper">
+    </header>
 
     <!-- section start -->
-    <section class="section_first">
-        <div class="section__wrapper_narrow">
+    <section class="section section_first">
+        <div class="section__wrapper_narrow content_narrow">
             <h1 class="master-head">Ksenia Koldaeva</h1>
 
             <!-- heading with format -->
@@ -50,7 +51,7 @@
 
     <!-- section start -->
     <section class="section_white">
-        <div class="section__wrapper_narrow">
+        <div class="section__wrapper_narrow content_narrow">
 
             <!-- heading with format -->
             <div class="heading__wrapper_align-center">
@@ -104,7 +105,7 @@
 
     <!-- section start -->
     <section class="section">
-        <div class="section__wrapper_narrow">
+        <div class="section__wrapper_narrow content_narrow">
 
             <!-- heading with format -->
             <div class="heading__wrapper_align-center">
@@ -122,12 +123,13 @@
             <div class="section__contents">
                 <div class="section__gallery_stacked">
 
-                    <div class="gallery__item_right">
+                    <!-- gallery-item start -->
+                    <div class="gallery__item gallery__item_right">
 
                         <!-- heading with format -->
                         <div class="heading__wrapper">
                             <div class="sub__heading_align-right">
-                                <span class="heading__superscript_align-right">Wordpress front- & backend</span>
+                                <span class="heading__superscript">Wordpress front- & backend</span>
                                 <h4 class="heading__text">Princeton University Humanities Council Website</h4>
 
                                 <div class="heading__format_bottom_abs-right">
@@ -141,7 +143,81 @@
                         <div class="thumbnail-vr">
                             <img src="../assets/princeton_hum_thumb.png" class="thumbnail__img" alt="Princeton University Humanities Council Website">
                         </div>
+                    </div>
+                    <!-- gallery-item end -->
 
+                    <!-- gallery-item start -->
+                    <div class="gallery__item gallery__item_left">
+                        <div class="thumbnail-vr">
+                            <img src="../assets/isometric_thumb.png" class="thumbnail__img" alt="Princeton University Humanities Council Website">
+                        </div>
+
+                        <!-- heading with format -->
+                        <div class="heading__wrapper">
+                            <div class="sub__heading_align-left">
+                                <span class="heading__superscript">Squarespace developer mode project</span>
+                                <h4 class="heading__text">Isometric Studio Website</h4>
+
+                                <div class="heading__format_bottom_abs-left">
+                                    <hr class="format__hr_bottom">
+                                    <img src="../assets/arrow-left.svg" class="format__arrow_abs-left" alt="arrow left">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- heading with format end -->
+                    </div>
+                    <!-- gallery-item end -->
+
+                    <!-- gallery-item start -->
+                    <div class="gallery__item gallery__item_right">
+
+                        <!-- heading with format -->
+                        <div class="heading__wrapper">
+                            <div class="sub__heading_align-right">
+                                <span class="heading__superscript">JavaScript plugins for Squarespace</span>
+                                <h4 class="heading__text">sqhub.io &mdash; Squarespace Plugins Code Store</h4>
+
+                                <div class="heading__format_bottom_abs-right">
+                                    <hr class="format__hr_bottom">
+                                    <img src="../assets/arrow-right.svg" class="format__arrow_abs-right" alt="arrow right">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- heading with format end -->
+
+                        <div class="thumbnail-vr">
+                            <img src="../assets/sqhub_thumb.png" class="thumbnail__img" alt="Princeton University Humanities Council Website">
+                        </div>
+                    </div>
+                    <!-- gallery-item end -->
+
+                    <!-- gallery-item start -->
+                    <div class="gallery__item gallery__item_left">
+                        <div class="thumbnail-vr">
+                            <img src="../assets/fitness-app_thumb.jpg" class="thumbnail__img" alt="Princeton University Humanities Council Website">
+                        </div>
+
+                        <!-- heading with format -->
+                        <div class="heading__wrapper">
+                            <div class="sub__heading_align-left">
+                                <span class="heading__superscript">MVC architecture Java application</span>
+                                <h4 class="heading__text">Desktop Fitness Logger</h4>
+
+                                <div class="heading__format_bottom_abs-left">
+                                    <hr class="format__hr_bottom">
+                                    <img src="../assets/arrow-left.svg" class="format__arrow_abs-left" alt="arrow left">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- heading with format end -->
+                    </div>
+                    <!-- gallery-item end -->
+
+                    <!-- gallery-item start -->
+                    <div class="gallery__item gallery__item_right">
+                        <div class="button__wrapper_align-center">
+                            <button class="section__btn">Load More</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,16 +233,16 @@
 
     <!-- section start -->
     <section class="section_white">
-        <div class="section__wrapper_narrow">
+        <div class="section__wrapper_narrow content_narrow">
 
             <!-- heading with format -->
             <div class="heading__wrapper_align-center">
                 <div class="section__heading">
                     <div class="heading__format_top">
-                        <h6 class="format__number_align-left">01</h6>
+                        <h6 class="format__number_align-left">03</h6>
                         <hr class="format__hr_top">
                     </div>
-                    <h2 class="heading__text">About</h2>
+                    <h2 class="heading__text">Profile</h2>
                 </div>
             </div>
             <!-- heading with format end -->
@@ -207,8 +283,8 @@
     </div>
 
 
-    <div class="empty"></div>
+    <div class="page__bumper"></div>
 </div>
-<footer class="footer_grey"></footer>
+    <footer class="footer_grey"></footer>
 </body>
 </html>

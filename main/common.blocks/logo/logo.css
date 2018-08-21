@@ -35,10 +35,6 @@ Overall styles
   clear: both;
   display: table;
 }
-[class*="narrow"] {
-  max-width: 1288px;
-  margin: auto;
-}
 [class*="hr"] {
   width: 80px;
   margin: auto 0;

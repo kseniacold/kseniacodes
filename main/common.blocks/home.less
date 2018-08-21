@@ -1,15 +1,5 @@
-@import "base";
+@import "../styles/declaratives";
 
-.header__wrapper_narrow {
-  .flex;
-  .justify-content(space-between);
-  padding: 2.857em 0;
-}
-
-.navigation__icon {
-  max-width: 2em;
-  margin-top: 10px;
-}
 
 /*_________ Top section ___________*/
 .master-head {
@@ -19,13 +9,15 @@
 [class*="sub__heading"], .section__heading {
   position: relative;
   display: inline-block;
-
 }
 
 [class*="sub__heading"] {
+  max-width: 400px;
+}
+
+.section_first .sub__heading {
   margin-top: 2.5em;
   margin-left: 3.429em;
-  max-width: 400px;
 }
 
 /*_________ Homepage Icons & elements ___________*/
@@ -98,6 +90,7 @@ section:not(.section_first) {
   font-weight: 700;
   letter-spacing: 0.265em;
   padding: 1.143em 3.214em;
+  width: 300px;
   border-radius: 6px;
   border: 1px solid #0c0cea;
 }
@@ -107,7 +100,7 @@ section:not(.section_first) {
   width: 100%;
 }
 
-[class*="gallery__item"] {
+.gallery__item {
   .flex();
   .align-items(center);
 
@@ -120,6 +113,14 @@ section:not(.section_first) {
   &:first-child {
     margin-top: 1.286em;
   }
+
+  .heading__text {
+    margin-top: 0.143em;
+  }
+
+  &:not(:first-child) {
+    margin-top: 8em;
+  }
 }
 
 
@@ -127,8 +128,10 @@ section:not(.section_first) {
   .justify-content(flex-end);
 
   .heading__wrapper {
-    position: relative;
-    left: 2.286em;
+    //position: relative;
+    //left: 2.286em;
+
+    margin-right: 4em;
   }
 }
 
@@ -136,8 +139,10 @@ section:not(.section_first) {
   .justify-content(flex-start);
 
   .heading__wrapper {
-    position: relative;
-    right: 50px;
+    //position: relative;
+    //right: 2.286em;
+
+    margin-left: 4em;
   }
 }
 
