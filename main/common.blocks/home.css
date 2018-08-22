@@ -10,6 +10,11 @@ Variables
 */
 /*
 ==============================================
+Typography
+==============================================
+*/
+/*
+==============================================
 Mixins
 ==============================================
 */
@@ -88,10 +93,6 @@ Overall styles
   clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
 }
 /*_________ Top section ___________*/
-.master-head {
-  max-width: 400px;
-  margin-top: 4.444em;
-}
 [class*="sub__heading"],
 .section__heading {
   position: relative;
@@ -99,10 +100,6 @@ Overall styles
 }
 [class*="sub__heading"] {
   max-width: 400px;
-}
-.section_first .sub__heading {
-  margin-top: 2.5em;
-  margin-left: 3.429em;
 }
 /*_________ Homepage Icons & elements ___________*/
 [class*="format__arrow"] {

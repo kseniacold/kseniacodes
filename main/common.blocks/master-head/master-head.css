@@ -92,7 +92,10 @@ Overall styles
   top: 0;
   clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
 }
-.content_narrow {
-  max-width: 1288px;
-  margin: auto;
+.master-head {
+  font-size: 6.429em;
+  line-height: 0.8em;
+  font-family: 'Raleway', sans-serif;
+  max-width: 500px;
+  margin-top: 4.444em;
 }

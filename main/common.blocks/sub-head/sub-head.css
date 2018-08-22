@@ -92,7 +92,17 @@ Overall styles
   top: 0;
   clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
 }
-.content_narrow {
-  max-width: 1288px;
-  margin: auto;
+.sub-head {
+  position: relative;
+  display: inline-block;
+}
+.sub-head__text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.888em;
+  letter-spacing: 0;
+  line-height: 1.45em;
+}
+.sub-head__text_shifted {
+  margin-top: 1.589em;
+  margin-left: 1.921em;
 }

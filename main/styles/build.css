@@ -10,6 +10,11 @@ Variables
 */
 /*
 ==============================================
+Typography
+==============================================
+*/
+/*
+==============================================
 Mixins
 ==============================================
 */
@@ -204,11 +209,34 @@ span {
   max-width: 2em;
   margin-top: 10px;
 }
-/*_________ Top section ___________*/
+.logo__text {
+  font-family: 'Raleway', sans-serif;
+}
+.logo__text_accent {
+  color: #0c0cea;
+}
 .master-head {
-  max-width: 400px;
+  font-size: 6.429em;
+  line-height: 0.8em;
+  font-family: 'Raleway', sans-serif;
+  max-width: 500px;
   margin-top: 4.444em;
 }
+.sub-head {
+  position: relative;
+  display: inline-block;
+}
+.sub-head__text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.888em;
+  letter-spacing: 0;
+  line-height: 1.45em;
+}
+.sub-head__text_shifted {
+  margin-top: 1.589em;
+  margin-left: 1.921em;
+}
+/*_________ Top section ___________*/
 [class*="sub__heading"],
 .section__heading {
   position: relative;
@@ -216,10 +244,6 @@ span {
 }
 [class*="sub__heading"] {
   max-width: 400px;
-}
-.section_first .sub__heading {
-  margin-top: 2.5em;
-  margin-left: 3.429em;
 }
 /*_________ Homepage Icons & elements ___________*/
 [class*="format__arrow"] {

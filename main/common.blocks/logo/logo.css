@@ -10,6 +10,11 @@ Variables
 */
 /*
 ==============================================
+Typography
+==============================================
+*/
+/*
+==============================================
 Mixins
 ==============================================
 */
@@ -86,4 +91,10 @@ Overall styles
   position: absolute;
   top: 0;
   clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
+}
+.logo__text {
+  font-family: 'Raleway', sans-serif;
+}
+.logo__text_accent {
+  color: #0c0cea;
 }
