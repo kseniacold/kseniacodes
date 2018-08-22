@@ -38,8 +38,18 @@ Typography
 @h4-size: 1.888em;
 @h6-size: 1em;
 
+.p-mix() {
+  color: @text-main;
+  line-height: 2;
+}
+
+.h2-mix() {
+  font-size: @h2-size;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
 .h4-mix () {
-  font-family: @base-font;
   font-size: @h4-size;
   letter-spacing: 0;
   line-height: 1.45em;
@@ -97,8 +107,8 @@ Mixins
 }
 
 .triangle-up() {
-  -webkit-clip-path: polygon(0px 200px, 30.16.29% 0%, 100% 200px);
-  clip-path: polygon(0px 200px, 30.16.29% 0%, 100% 200px);
+  -webkit-clip-path: polygon(0px 200px, 30.16% 0%, 100% 200px);
+  clip-path: polygon(0px 200px, 30.16% 0%, 100% 200px);
 }
 
 .hover-box-shadow() {
@@ -183,3 +193,8 @@ Overall styles
   top: 0;
 }
 
+// max-width, msx-height
+
+[class*="400w"] {
+  max-width: 400px;
+}

@@ -3,6 +3,15 @@
   overflow: hidden;
   position: relative;
 }
+.page__section {
+  padding-top: 14.857em;
+}
+.page__section_first {
+  padding-top: 0;
+}
+.page__section_spaced {
+  padding-bottom: 10em;
+}
 .page__bumper {
   height: 48px;
 }

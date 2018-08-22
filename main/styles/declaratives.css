@@ -86,3 +86,6 @@ Overall styles
   left: 0;
   top: 0;
 }
+[class*="400w"] {
+  max-width: 400px;
+}

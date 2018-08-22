@@ -89,66 +89,18 @@ Overall styles
 [class*="400w"] {
   max-width: 400px;
 }
-ul {
-  padding: 0;
-  margin: 0;
+.article__col-3 {
+  width: 31.2%;
 }
-ul li {
-  list-style: none;
+.article__em {
+  font-size: 1.888em;
+  letter-spacing: 0;
+  line-height: 1.45em;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
+.article__text {
+  color: #798f90;
+  line-height: 2;
 }
-p,
-hr {
-  padding: 0;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover {
-  color: #0c0cea;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.055em;
-}
-button {
-  background-color: transparent;
-  border: none;
-}
-input:focus,
-button:focus,
-form:focus,
-a:focus {
-  outline: none;
-}
-* {
-  box-sizing: border-box;
-}
-h1 {
-  font-size: 6.429em;
-  line-height: 0.8em;
-}
-h3 {
-  font-size: 2.857em;
-  letter-spacing: 0.075em;
-}
-h6 {
-  font-size: 1em;
+.article__text_spaced {
+  margin-bottom: 2.286em;
 }

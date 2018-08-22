@@ -89,66 +89,11 @@ Overall styles
 [class*="400w"] {
   max-width: 400px;
 }
-ul {
-  padding: 0;
-  margin: 0;
-}
-ul li {
-  list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
-}
-p,
-hr {
-  padding: 0;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover {
-  color: #0c0cea;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.055em;
-}
-button {
-  background-color: transparent;
-  border: none;
-}
-input:focus,
-button:focus,
-form:focus,
-a:focus {
-  outline: none;
-}
-* {
-  box-sizing: border-box;
-}
-h1 {
-  font-size: 6.429em;
-  line-height: 0.8em;
-}
-h3 {
-  font-size: 2.857em;
-  letter-spacing: 0.075em;
-}
-h6 {
-  font-size: 1em;
+.button {
+  font-weight: 700;
+  letter-spacing: 0.265em;
+  padding: 1.143em 3.214em;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #0c0cea;
 }

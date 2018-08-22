@@ -86,19 +86,30 @@ Overall styles
   left: 0;
   top: 0;
 }
-.heading {
-  font-family: 'Raleway', sans-serif;
+[class*="400w"] {
+  max-width: 400px;
 }
 .heading_master {
   font-size: 6.429em;
   line-height: 0.8em;
   max-width: 500px;
 }
+.heading__text {
+  font-size: 3.571em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.heading__superscript {
+  color: #798f90;
+  line-height: 2;
+}
 .heading__text_sub {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.888em;
   letter-spacing: 0;
   line-height: 1.45em;
+}
+.heading__text_top-spaced {
+  margin-top: 0.143em;
 }
 .heading__format_bottom {
   margin-top: 10px;

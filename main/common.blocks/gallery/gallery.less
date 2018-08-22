@@ -1,0 +1,40 @@
+@import "../../styles/declaratives";
+
+.gallery__item {
+  .flex();
+  .align-items(center);
+
+  &:hover {
+    .thumbnail {
+      .hover-box-shadow();
+    }
+  }
+
+  margin-top: 8em;
+}
+
+.gallery__item_first {
+  margin-top: 1.286em;
+}
+
+.gallery__item_right {
+  .justify-content(flex-end);
+
+  .heading {
+    //position: relative;
+    //left: 2.286em;
+
+    margin-right: 4em;
+  }
+}
+
+.gallery__item_left {
+  .justify-content(flex-start);
+
+  .heading {
+    //position: relative;
+    //right: 2.286em;
+
+    margin-left: 4em;
+  }
+}

@@ -86,6 +86,9 @@ Overall styles
   left: 0;
   top: 0;
 }
+[class*="400w"] {
+  max-width: 400px;
+}
 .content {
   font-family: 'Raleway', sans-serif;
 }
@@ -93,12 +96,32 @@ Overall styles
   max-width: 1288px;
   margin: auto;
 }
+.content__heading {
+  margin-bottom: 8.375em;
+}
 .content__heading_master {
   margin-top: 4.444em;
 }
 .content__heading_shifted {
   margin-top: 2.625em;
   margin-left: 3.625em;
+}
+.content__article {
+  margin: 0 auto 2.143em auto;
+  max-width: 78%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.content__gallery {
+  width: 100%;
 }
 .content__scroll-down {
   margin-top: 4.143em;
