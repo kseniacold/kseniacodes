@@ -86,3 +86,26 @@ Overall styles
   left: 0;
   top: 0;
 }
+.triangle {
+  position: relative;
+  height: 200px;
+  background-color: #fff;
+}
+.triangle__down {
+  float: left;
+  height: 220px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-clip-path: polygon(0px 0px, 69.84% 100%, 100% 0px);
+  clip-path: polygon(0px 0px, 69.84% 100%, 100% 0px);
+}
+.triangle__up {
+  float: left;
+  height: 220px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-clip-path: polygon(0px 200px, 30.16 0.29% 0%, 100% 200px);
+  clip-path: polygon(0px 200px, 30.16 0.29% 0%, 100% 200px);
+}

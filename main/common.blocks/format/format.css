@@ -1,0 +1,16 @@
+.format__hr {
+  width: 80px;
+  margin: auto 0;
+}
+.format__hr_full {
+  width: 100%;
+}
+.format__arrow {
+  max-height: 9px;
+}
+.format__hr_bottom {
+  margin-bottom: 3px;
+}
+.format__hr_top {
+  margin-top: 3px;
+}

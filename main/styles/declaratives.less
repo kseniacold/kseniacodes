@@ -82,7 +82,7 @@ Mixins
   font-weight: 900;
 }
 
-.triangle() {
+.triangle-mix() {
   float: left;
   height: 220px;
   width: 100%;
@@ -91,13 +91,14 @@ Mixins
 }
 
 .triangle-down() {
-  -webkit-clip-path: polygon(0px 0px, 63.71% 100%, 100% 0px);
-  clip-path: polygon(0px 0px, 63.71% 100%, 100% 0px);
+  -webkit-clip-path: polygon(0px 0px, 69.84%  100%, 100% 0px);
+  clip-path: polygon(0px 0px, 69.84% 100%, 100% 0px);
 
 }
 
 .triangle-up() {
-  clip-path: polygon(0px 200px, 36.29% 0%, 100% 200px);
+  -webkit-clip-path: polygon(0px 200px, 30.16.29% 0%, 100% 200px);
+  clip-path: polygon(0px 200px, 30.16.29% 0%, 100% 200px);
 }
 
 .hover-box-shadow() {
@@ -118,11 +119,7 @@ Overall styles
   display: table;
 }
 
-[class*="hr"]  {
-  width: 80px;
-  margin: auto 0;
-}
-
+// Common modifiers
 [class*="accent"] {
   color: @accent;
 }
@@ -147,8 +144,19 @@ Overall styles
   text-align: center;
 }
 
-[class*="abs-right"] {
+[class*="inline-block"] {
+  position: relative;
+  display: inline-block;
+}
+
+
+// Absolute positioning
+
+[class*="abs"] {
   position: absolute;
+}
+
+[class*="abs-right"] {
   right: 0;
 }
 
@@ -157,20 +165,21 @@ Overall styles
   left: 0;
 }
 
-.triangle__wrapper {
-  position: relative;
-  height: 200px;
-  background-color: @background-white;
+[class*="abs-bottom"] {
+  right: 0;
 }
 
-[class*="triangle_down"]  {
-  .triangle();
-  .triangle-down();
+[class*="abs-top"] {
+  right: 0;
 }
 
-[class*="triangle_up"]  {
-  .triangle();
-  .triangle-up();
+[class*="abs-btm-right"] {
+  right: 0;
+  bottom: 0;
 }
 
+[class*="abs-top-left"] {
+  left: 0;
+  top: 0;
+}
 

@@ -1,0 +1,18 @@
+@import "../../styles/declaratives";
+
+.triangle {
+  position: relative;
+  height: 200px;
+  background-color: @background-white;
+}
+
+.triangle__down  {
+  .triangle-mix();
+  .triangle-down();
+}
+
+.triangle__up  {
+  .triangle-mix();
+  .triangle-up();
+}
+
