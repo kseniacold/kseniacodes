@@ -375,11 +375,3 @@ h6 {
   width: 100%;
   height: auto;
 }
-/*_________ Top section ___________*/
-[class*="sub__heading"],
-.section__heading {
-  position: relative;
-  display: inline-block;
-}
-/*_________ Heading with format ___________*/
-/*_________ Stacked Image Gallery ___________*/
