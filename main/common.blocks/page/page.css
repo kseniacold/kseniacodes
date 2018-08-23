@@ -4,13 +4,16 @@
   position: relative;
 }
 .page__section {
-  padding-top: 14.857em;
+  padding-top: 9.625em;
 }
 .page__section_first {
   padding-top: 0;
 }
 .page__section_spaced {
   padding-bottom: 10em;
+}
+.page__footer {
+  padding-top: 6.750em;
 }
 .page__bumper {
   height: 48px;

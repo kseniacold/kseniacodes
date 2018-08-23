@@ -127,3 +127,22 @@ Overall styles
   margin-top: 4.143em;
   margin-bottom: 2em;
 }
+.content__ascii-table {
+  max-width: 78%;
+  margin: 8.375em auto 0 auto;
+  background-color: #1b1d23;
+}
+.content__button-block {
+  max-width: 50%;
+  margin: 7.250em auto 0 auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}

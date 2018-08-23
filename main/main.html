@@ -95,7 +95,7 @@
             <!-- section contents end -->
 
             <div class="content__button_align-center">
-                <button class="button button_accent section__btn">Checkout My Profile</button>
+                <button class="button button_accent section__btn"><a class="button__link" href="#skills">Checkout My Skills</a></button>
             </div>
         </div>
     </section>
@@ -240,7 +240,7 @@
                         <hr class="format__hr format__hr_top">
                     </div>
 
-                    <h2 class="heading__text">Skills</h2>
+                    <h2 class="heading__text" id="skills">Skills</h2>
                 </div>
                 <!-- heading with format end -->
             </div>
@@ -252,10 +252,15 @@
                 </p>
             </article>
 
-            <div class="content__ascii-table content__ascii-table-align-center">
-                <pre>
+            <div class="content__button-block">
+                <button class="button button_accent section__btn">Hire Me</button>
+                <button class="button button_accent section__btn">Download Resume</button>
+            </div>
+
+            <div class="content__ascii-table ascii-table ascii-table_align-center">
+                <pre class="ascii-table__table ascii-table_green">
 +-------------------------------------+------------------------------+--------------------------+--------------------------------+
-| Programming languages & Foundations |   Client Side Technologies   | Server Side Technologies |        Tools & Workflow        |
+| Programming languages & Foundation  |   Client Side Technologies   | Server Side Technologies |        Tools & Workflow        |
 +-------------------------------------+------------------------------+--------------------------+--------------------------------+
 | C                                   | JavaScript                   | MySQL                    | Unified Modeling Language      |
 | C++                                 | TypeScript                   | SQLite                   | Entity Relationship Diagrams   |
@@ -265,15 +270,11 @@
 | Algorithms & Data Structures        | jQuery                       | MongoDB                  | npm                            |
 |                                     | Pug — template engine        |                          |                                |
 +-------------------------------------+------------------------------+--------------------------+--------------------------------+
-
                 </pre>
             </div>
             <!-- section contents end -->
 
-            <div class="content__button-block">
-                <button class="button button_accent section__btn">Hire Me</button>
-                <button class="button button_accent section__btn">Download Resume</button>
-            </div>
+
         </div>
     </section>
     <!-- section end -->
@@ -285,6 +286,31 @@
 
     <div class="page__bumper"></div>
 </div>
-    <footer class="footer_grey"></footer>
+    <footer class="page__footer footer_grey">
+        <div class="footer__content content content_narrow">
+
+            <div class="content__heading content__heading_align-center">
+                <!-- heading with format -->
+                <div class="heading heading_inline-block">
+                    <div class="heading__format_top format format_align-left">
+                        <h6 class="format__number">04</h6>
+                        <hr class="format__hr format__hr_top">
+                    </div>
+
+                    <h2 class="heading__text">Contact</h2>
+                </div>
+                <!-- heading with format end -->
+            </div>
+
+            <div class="content__contact contact contact_align-center">
+                <h3 class="contact__head email">
+                    <a class="email__link link" href="mailto:hello@kseniacodes.com">hello@kseniacodes.com</a>
+                </h3>
+                <h3 class="contact__head phone">
+                    <a class="phone__link link" href="tel:4242584848">(424) 258 4848</a>
+                </h3>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -115,9 +115,6 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-a:hover {
-  color: #0c0cea;
-}
 button,
 input,
 optgroup,
@@ -168,13 +165,16 @@ h6 {
   position: relative;
 }
 .page__section {
-  padding-top: 14.857em;
+  padding-top: 9.625em;
 }
 .page__section_first {
   padding-top: 0;
 }
 .page__section_spaced {
   padding-bottom: 10em;
+}
+.page__footer {
+  padding-top: 6.750em;
 }
 .page__bumper {
   height: 48px;
@@ -229,6 +229,25 @@ h6 {
 .content__scroll-down {
   margin-top: 4.143em;
   margin-bottom: 2em;
+}
+.content__ascii-table {
+  max-width: 78%;
+  margin: 8.375em auto 0 auto;
+  background-color: #1b1d23;
+}
+.content__button-block {
+  max-width: 50%;
+  margin: 7.250em auto 0 auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 .navigation__icon {
   max-width: 2em;
@@ -323,6 +342,7 @@ h6 {
   margin-bottom: 2.286em;
 }
 .button {
+  cursor: pointer;
   font-weight: 700;
   letter-spacing: 0.265em;
   padding: 1.143em 3.214em;
@@ -377,4 +397,31 @@ h6 {
 .thumbnail__img {
   width: 100%;
   height: auto;
+}
+.ascii-table {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ascii-table__table {
+  padding: 38px 0 24px 0;
+}
+.ascii-table_pink {
+  color: #eea5fc;
+}
+.ascii-table_green {
+  color: #A6F69E;
+}
+.footer__content {
+  padding-bottom: 10em;
+}
+.link {
+  color: #000;
+}
+.link:hover {
+  color: #0c0cea;
+}
+.contact__head {
+  font-size: 2.857em;
+  letter-spacing: normal;
+  margin-bottom: 0.744em;
 }

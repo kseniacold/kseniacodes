@@ -89,63 +89,16 @@ Overall styles
 [class*="400w"] {
   max-width: 400px;
 }
-ul {
-  padding: 0;
-  margin: 0;
+.ascii-table {
+  font-size: 12px;
+  line-height: 1.5;
 }
-ul li {
-  list-style: none;
+.ascii-table__table {
+  padding: 38px 0 24px 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
+.ascii-table_pink {
+  color: #eea5fc;
 }
-p,
-hr {
-  padding: 0;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.055em;
-}
-button {
-  background-color: transparent;
-  border: none;
-}
-input:focus,
-button:focus,
-form:focus,
-a:focus {
-  outline: none;
-}
-* {
-  box-sizing: border-box;
-}
-h1 {
-  font-size: 6.429em;
-  line-height: 0.8em;
-}
-h3 {
-  font-size: 2.857em;
-  letter-spacing: 0.075em;
-}
-h6 {
-  font-size: 1em;
+.ascii-table_green {
+  color: #A6F69E;
 }
