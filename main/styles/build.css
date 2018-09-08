@@ -167,6 +167,9 @@ h6 {
 .page__section {
   padding-top: 9.625em;
 }
+.page__portfolio {
+  padding-top: 154px;
+}
 .page__section_first {
   padding-top: 0;
 }
@@ -270,6 +273,13 @@ h6 {
   color: #798f90;
   line-height: 2;
 }
+.heading__subscript {
+  color: #798f90;
+  line-height: 2;
+}
+.heading__subscript_bottom {
+  margin-top: 26px;
+}
 .heading__text_sub {
   font-size: 1.888em;
   letter-spacing: 0;
@@ -280,6 +290,9 @@ h6 {
 }
 .heading__format_bottom {
   margin-top: 10px;
+}
+.heading__format_bottom-tall {
+  margin-top: 22px;
 }
 .heading__format_top {
   margin-bottom: 10px;
@@ -299,6 +312,9 @@ h6 {
 }
 .format__hr_top {
   margin-top: 3px;
+}
+.format__hr_center {
+  margin: auto;
 }
 .scroll-down__icon {
   max-width: 60px;
@@ -397,6 +413,25 @@ h6 {
 .thumbnail__img {
   width: 100%;
   height: auto;
+}
+.meta {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.meta__col_2 {
+  width: 46%;
+}
+.tag__text {
+  color: #798f90;
+  line-height: 2;
 }
 .ascii-table {
   font-size: 12px;

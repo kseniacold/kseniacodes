@@ -89,41 +89,18 @@ Overall styles
 [class*="400w"] {
   max-width: 400px;
 }
-.heading_master {
-  font-size: 6.429em;
-  line-height: 0.8em;
-  max-width: 500px;
+.meta {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
-.heading__text {
-  font-size: 3.571em;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.heading__superscript {
-  color: #798f90;
-  line-height: 2;
-}
-.heading__subscript {
-  color: #798f90;
-  line-height: 2;
-}
-.heading__subscript_bottom {
-  margin-top: 26px;
-}
-.heading__text_sub {
-  font-size: 1.888em;
-  letter-spacing: 0;
-  line-height: 1.45em;
-}
-.heading__text_top-spaced {
-  margin-top: 0.143em;
-}
-.heading__format_bottom {
-  margin-top: 10px;
-}
-.heading__format_bottom-tall {
-  margin-top: 22px;
-}
-.heading__format_top {
-  margin-bottom: 10px;
+.meta__col_2 {
+  width: 46%;
 }

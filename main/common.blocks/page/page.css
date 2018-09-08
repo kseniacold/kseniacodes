@@ -6,6 +6,9 @@
 .page__section {
   padding-top: 9.625em;
 }
+.page__portfolio {
+  padding-top: 154px;
+}
 .page__section_first {
   padding-top: 0;
 }
