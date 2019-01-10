@@ -1,7 +1,7 @@
 # kseniacodes
 ## Minimalistic portfolio website
 
-##Live URL: [kseniacodes.com](https://kseniacodes.com)
+## Live URL: [kseniacodes.com](https://kseniacodes.com)
 
 ### File structure & organization: 
 * Follows BEM methodology https://en.bem.info/methodology/quick-start/
